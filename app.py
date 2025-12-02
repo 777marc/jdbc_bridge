@@ -39,7 +39,7 @@ def creator():
 
 # Create SQLAlchemy engine with JayDeBeApi
 engine = create_engine(
-    'jdbc:db2://',
+    'sqlite://',  # Dummy URL - actual connection handled by creator
     creator=creator,
     poolclass=NullPool,
     echo=True
